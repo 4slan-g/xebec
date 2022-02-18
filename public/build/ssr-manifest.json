@@ -1,0 +1,6 @@
+{
+  "plugin-vue:export-helper": [],
+  "resources/views/pages/index.vue": [],
+  "resources/scripts/vite/import-page-component.ts": [],
+  "resources/scripts/ssr.ts": []
+}
