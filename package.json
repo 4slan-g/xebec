@@ -3,7 +3,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "prod": "vite build && vite build --ssr",
+        "render": "node public/build/ssr.js",
+        "prod": "vite build --ssr && npm run render",
         "preview": "vite preview"
     },
     "devDependencies": {
@@ -13,14 +14,14 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "tailwindcss": "^3.0.23",
-        "vite": "^2.8.3",
+        "vite": "^2.8.4",
         "vite-plugin-laravel": "^0.2.0-beta.6"
     },
     "dependencies": {
         "@inertiajs/inertia": "^0.11.0",
         "@inertiajs/inertia-vue3": "^0.6.0",
         "@inertiajs/server": "^0.1.0",
-        "@vitejs/plugin-vue": "^2.2.0",
+        "@vitejs/plugin-vue": "^2.2.2",
         "@vue/server-renderer": "^3.2.31",
         "vue": "^3.2.31"
     }
